@@ -1,4 +1,4 @@
-# Family_Dental_Clinic
+# Colour-Me-Happy
 
 Color me happy is a mental health clinic management system that has a good member base and reputation. 
 It’s a solution for the family dental clinic to manage patients more easily and conveniently. 
