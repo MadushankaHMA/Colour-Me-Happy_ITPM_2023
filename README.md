@@ -1,6 +1,6 @@
 # Family_Dental_Clinic
 
-Family Dental is a dental clinic management system that has a good member base and reputation. 
+Color me happy is a mental health clinic management system that has a good member base and reputation. 
 It’s a solution for the family dental clinic to manage patients more easily and conveniently. 
 Therefore, an automated system is implemented under 8 functions through this project.
 They are User management, Inventory control management, Diagnosis info Management, 
