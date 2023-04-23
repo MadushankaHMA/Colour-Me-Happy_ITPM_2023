@@ -1,9 +1,5 @@
 const express = require("express");
-const { 
-	registerAdmin, 
-	authAdmin, 
-	updateAdminProfile, 
-	getAdminProfile } = require("../controllers/adminController");
+const { registerAdmin, authAdmin, updateAdminProfile, getAdminProfile } = require("../controllers/adminController");
 const {
 	registerDoctor,
 	getDoctors,
@@ -28,6 +24,8 @@ const {
 	DeleteMedicalHistory,
 	getMedicalHistoryCount,
 } = require("../controllers/medicalHistoryController");
+
+const { getBlogCount } = require("../controllers/blogController");
 
 const { protect } = require("../middlewares/authAdminMiddleware");
 const { post } = require("./doctorRoutes");
@@ -64,5 +62,8 @@ router
 	.get(protect, getMedicalHistoryById)
 	.put(protect, UpdateMedicalHistory)
 	.delete(protect, DeleteMedicalHistory);
+
+//Routes for Blogs
+router.route("/blog/report").get(protect, getBlogCount);
 
 module.exports = router;
