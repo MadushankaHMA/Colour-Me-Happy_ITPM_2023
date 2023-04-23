@@ -20,6 +20,15 @@ const {
 	getPatientCount,
 } = require("../controllers/patientController");
 
+const {
+	getMedicalHistory,
+	createMedicalHistory,
+	getMedicalHistoryById,
+	UpdateMedicalHistory,
+	DeleteMedicalHistory,
+	getMedicalHistoryCount,
+} = require("../controllers/medicalHistoryController");
+
 const { protect } = require("../middlewares/authAdminMiddleware");
 const { post } = require("./doctorRoutes");
 const router = express.Router();
@@ -46,5 +55,14 @@ router.route("/patient/profile/edit/:_id").put(protect, updatePatientProfileById
 router.route("/patients").get(protect, getPatients);
 router.route("/patients/count").get(protect, getPatientCount);
 
+//Routes for medical history management admin end
+router.route("/medical_history").get(protect, getMedicalHistory);
+router.route("/medical_history/create").post(protect, createMedicalHistory);
+router.route("/medical_history/report").get(protect, getMedicalHistoryCount);
+router
+	.route("/medical_history/:id")
+	.get(protect, getMedicalHistoryById)
+	.put(protect, UpdateMedicalHistory)
+	.delete(protect, DeleteMedicalHistory);
 
 module.exports = router;
