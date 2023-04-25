@@ -8,7 +8,37 @@ const {
 } = require("../controllers/doctorController");
 const { getPatients, getPatientProfileById } = require("../controllers/patientController");
 
-const { getMedicalHistory, getMedicalHistoryById } = require("../controllers/medicalHistoryController");
+const { 
+	getMedicalHistory, 
+	getMedicalHistoryById 
+} = require("../controllers/medicalHistoryController");
+
+const {
+	getBasicTreatments,
+	createBasicTreatment,
+	getBasicTreatmentById,
+	updateBasicTreatment,
+	deleteBasicTreatment,
+	getBasicTreatmentCount,
+} = require("../controllers/basicTreatmentController");
+
+const {
+	getOrthodontics,
+	createOrthodontic,
+	getOrthodonticById,
+	updateOrthodontic,
+	deleteOrthodontic,
+	getOrthodonticCount,
+} = require("../controllers/orthodonticController");
+
+const {
+	getFillings,
+	createFilling,
+	getFillingtById,
+	updateFilling,
+	deleteFilling,
+	getFillingCount,
+} = require("../controllers/fillingController");
 
 const {
 	getBasicTreatments,
