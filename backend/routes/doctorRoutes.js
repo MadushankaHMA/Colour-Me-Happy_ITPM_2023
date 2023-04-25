@@ -6,10 +6,7 @@ const {
 	getDoctorProfile,
 	deleteDoctorProfile,
 } = require("../controllers/doctorController");
-const { 
-	getPatients, 
-	getPatientProfileById 
-} = require("../controllers/patientController");
+const { getPatients, getPatientProfileById } = require("../controllers/patientController");
 
 const { 
 	getMedicalHistory, 
@@ -42,6 +39,41 @@ const {
 	deleteFilling,
 	getFillingCount,
 } = require("../controllers/fillingController");
+
+const {
+	getBasicTreatments,
+	createBasicTreatment,
+	getBasicTreatmentById,
+	updateBasicTreatment,
+	deleteBasicTreatment,
+	getBasicTreatmentCount,
+} = require("../controllers/basicTreatmentController");
+
+const {
+	getOrthodontics,
+	createOrthodontic,
+	getOrthodonticById,
+	updateOrthodontic,
+	deleteOrthodontic,
+	getOrthodonticCount,
+} = require("../controllers/orthodonticController");
+
+const {
+	getFillings,
+	createFilling,
+	getFillingtById,
+	updateFilling,
+	deleteFilling,
+	getFillingCount,
+} = require("../controllers/fillingController");
+
+const {
+	getBlogsForEachDoctor,
+	createBlog,
+	getBlogById,
+	UpdateBlog,
+	DeleteBlog,
+} = require("../controllers/blogController");
 
 const { protect } = require("../middlewares/authDoctorMiddleware");
 const router = express.Router();
@@ -90,5 +122,10 @@ router
 	.get(protect, getFillingtById)
 	.put(protect, updateFilling)
 	.delete(protect, deleteFilling);
+
+//Routes for blog management by doctor
+router.route("/blogs/").get(protect, getBlogsForEachDoctor);
+router.route("/blogs/create").post(protect, createBlog);
+router.route("/blogs/:id").get(getBlogById).put(protect, UpdateBlog).delete(protect, DeleteBlog);
 
 module.exports = router;
