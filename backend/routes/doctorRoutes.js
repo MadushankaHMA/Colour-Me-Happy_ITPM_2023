@@ -7,12 +7,6 @@ const {
 	deleteDoctorProfile,
 } = require("../controllers/doctorController");
 const { getPatients, getPatientProfileById } = require("../controllers/patientController");
-
-const { 
-	getMedicalHistory, 
-	getMedicalHistoryById 
-} = require("../controllers/medicalHistoryController");
-
 const {
 	getBasicTreatments,
 	createBasicTreatment,
@@ -21,7 +15,6 @@ const {
 	deleteBasicTreatment,
 	getBasicTreatmentCount,
 } = require("../controllers/basicTreatmentController");
-
 const {
 	getOrthodontics,
 	createOrthodontic,
@@ -30,7 +23,6 @@ const {
 	deleteOrthodontic,
 	getOrthodonticCount,
 } = require("../controllers/orthodonticController");
-
 const {
 	getFillings,
 	createFilling,
@@ -39,34 +31,6 @@ const {
 	deleteFilling,
 	getFillingCount,
 } = require("../controllers/fillingController");
-
-const {
-	getBasicTreatments,
-	createBasicTreatment,
-	getBasicTreatmentById,
-	updateBasicTreatment,
-	deleteBasicTreatment,
-	getBasicTreatmentCount,
-} = require("../controllers/basicTreatmentController");
-
-const {
-	getOrthodontics,
-	createOrthodontic,
-	getOrthodonticById,
-	updateOrthodontic,
-	deleteOrthodontic,
-	getOrthodonticCount,
-} = require("../controllers/orthodonticController");
-
-const {
-	getFillings,
-	createFilling,
-	getFillingtById,
-	updateFilling,
-	deleteFilling,
-	getFillingCount,
-} = require("../controllers/fillingController");
-
 const {
 	getBlogsForEachDoctor,
 	createBlog,
@@ -74,7 +38,7 @@ const {
 	UpdateBlog,
 	DeleteBlog,
 } = require("../controllers/blogController");
-
+const { getMedicalHistory, getMedicalHistoryById } = require("../controllers/medicalHistoryController");
 const { protect } = require("../middlewares/authDoctorMiddleware");
 const router = express.Router();
 
@@ -88,10 +52,6 @@ router.route("/delete").delete(protect, deleteDoctorProfile);
 //Routes for Patient account operations by doctor
 router.route("/patients").get(protect, getPatients);
 router.route("/patient/profile/view/:_id").get(protect, getPatientProfileById);
-
-//Routes for doctors to get medical history
-router.route("/medical_history").get(protect, getMedicalHistory);
-router.route("/medical_history/:id").get(protect, getMedicalHistoryById);
 
 //Routes for basic treatment configuration by doctor
 router.route("/treatment/basic_treatment/get").get(protect, getBasicTreatments);
@@ -127,5 +87,9 @@ router
 router.route("/blogs/").get(protect, getBlogsForEachDoctor);
 router.route("/blogs/create").post(protect, createBlog);
 router.route("/blogs/:id").get(getBlogById).put(protect, UpdateBlog).delete(protect, DeleteBlog);
+
+//Routes for doctors to get medical history
+router.route("/medical_history").get(protect, getMedicalHistory);
+router.route("/medical_history/:id").get(protect, getMedicalHistoryById);
 
 module.exports = router;
