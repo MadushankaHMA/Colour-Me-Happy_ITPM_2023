@@ -30,16 +30,16 @@ import {
 	updateFeedbackReducer,
 } from "./reducers/feedbackReducer";
 
-import {
-	createQuestionReducer,
-	deleteQuestionforAdminReducer,
-	deleteQuestionReducer,
-	getQuestionCommonQAPageReducer,
-	getQuestionForAdminReducer,
-	getQuestionReducer,
-	UpdateQuestionforAdminReducer,
-	updateQuestionReducer,
-} from "./reducers/questionReducer";
+// import {
+// 	createQuestionReducer,
+// 	deleteQuestionforAdminReducer,
+// 	deleteQuestionReducer,
+// 	getQuestionCommonQAPageReducer,
+// 	getQuestionForAdminReducer,
+// 	getQuestionReducer,
+// 	UpdateQuestionforAdminReducer,
+// 	updateQuestionReducer,
+// } from "./reducers/questionReducer";
 
 import {
 	patientLoginReducer,
@@ -72,13 +72,13 @@ import {
 	orthodonticUpdateReducer,
 	orthodonticDeleteReducer,
 } from "./reducers/orthodonticReducer";
-import {
-	ScheduleHandlingListReducer,
-	ScheduleHandlingCreateReducer,
-	ScheduleHandlingUpdateReducer,
-	ScheduleHandlingDeleteReducer,
-	ScheduleListForUsersReducer,
-} from "./reducers/scheduleHandlingReducer";
+// import {
+// 	ScheduleHandlingListReducer,
+// 	ScheduleHandlingCreateReducer,
+// 	ScheduleHandlingUpdateReducer,
+// 	ScheduleHandlingDeleteReducer,
+// 	ScheduleListForUsersReducer,
+// } from "./reducers/scheduleHandlingReducer";
 import {
 	blogCreateReducer,
 	blogDeleteReducer,
@@ -87,12 +87,12 @@ import {
 	blogUpdateReducer,
 } from "./reducers/blogsReducers";
 
-import {
-	inventoryListReducer,
-	inventoryCreateReducer,
-	inventoryUpdateReducer,
-	inventoryDeleteReducer,
-} from "./reducers/InventoryReducer";
+// import {
+// 	inventoryListReducer,
+// 	inventoryCreateReducer,
+// 	inventoryUpdateReducer,
+// 	inventoryDeleteReducer,
+// } from "./reducers/InventoryReducer";
 
 import {
 	medicalHistoryCreateReducer,
