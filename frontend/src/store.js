@@ -132,18 +132,9 @@ const reducer = combineReducers({
 	getFeedbackforAdmin: getFeedbackforAdminReducer,
 	UpdateFeedbackforAdmin: UpdateFeedbackforAdminReducer,
 	deleteFeedbackforAdmin: deleteFeedbackforAdminReducer,
-	getQuestion: getQuestionReducer,
-	createQuestion: createQuestionReducer,
-	updateQuestion: updateQuestionReducer,
-	deleteQuestion: deleteQuestionReducer,
-	getQuestionForAdmin: getQuestionForAdminReducer,
-	UpdateQuestionforAdmin: UpdateQuestionforAdminReducer,
-	deleteQuestionforAdmin: deleteQuestionforAdminReducer,
+
 	getFeedbackCommonReviewPage: getFeedbackCommonReviewPageReducer,
-	inventoryList: inventoryListReducer,
-	inventoryCreate: inventoryCreateReducer,
-	inventoryUpdate: inventoryUpdateReducer,
-	inventoryDelete: inventoryDeleteReducer,
+
 	basicTreatmentList: basicTreatmentListReducer,
 	basicTreatmentCreate: basicTreatmentCreateReducer,
 	basicTreatmentUpdate: basicTreatmentUpdateReducer,
@@ -156,11 +147,6 @@ const reducer = combineReducers({
 	orthodonticCreate: orthodonticCreateReducer,
 	orthodonticUpdate: orthodonticUpdateReducer,
 	orthodonticDelete: orthodonticDeleteReducer,
-	ScheduleHandlingList: ScheduleHandlingListReducer,
-	ScheduleHandlingCreate: ScheduleHandlingCreateReducer,
-	ScheduleHandlingUpdate: ScheduleHandlingUpdateReducer,
-	ScheduleHandlingDelete: ScheduleHandlingDeleteReducer,
-	ScheduleListforUsers: ScheduleListForUsersReducer,
 	medicalHistoryList: medicalHistoryListReducer,
 	medicalHistoryCreate: medicalHistoryCreateReducer,
 	medicalHistoryUpdate: medicalHistoryUpdateReducer,
@@ -172,7 +158,6 @@ const reducer = combineReducers({
 	blogCreate: blogCreateReducer,
 	blogUpdate: blogUpdateReducer,
 	blogDelete: blogDeleteReducer,
-	getQuestionCommonQAPage: getQuestionCommonQAPageReducer,
 });
 
 const adminInfoFromStorage = localStorage.getItem("adminInfo") ? JSON.parse(localStorage.getItem("adminInfo")) : null;
