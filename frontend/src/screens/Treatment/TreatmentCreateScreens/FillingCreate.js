@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Button, Card, Form } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
-import { createFillingAction } from "../../../actions/fillingAction";
 import Loading from "../../../components/Loading";
 import ErrorMessage from "../../../components/ErrorMessage";
 import TreatmentNavBar from "../TreatmentDashBoard/TreatmentNavBar";
@@ -47,10 +46,6 @@ export default function FillingCreate({ history }) {
 
 	const submitHandler = (e) => {
 		e.preventDefault();
-
-		dispatch(
-			createFillingAction(nic, cost, anestheticStatus, fillingMaterial, fillingType, date, checkup, procedure, remark)
-		);
 
 		resetHandler();
 	};
