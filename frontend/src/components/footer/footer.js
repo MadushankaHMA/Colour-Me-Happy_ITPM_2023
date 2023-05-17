@@ -1,6 +1,6 @@
 import React from "react";
 import "./footer.css";
-import logo1 from "../../Images/logo1.png";
+import logo1 from "../header/mainlogo.png";
 
 function Footer() {
 	return (
@@ -9,9 +9,9 @@ function Footer() {
 				<div className="row">
 					{/* Column1 */}
 					<div className="col">
-						<h4>FAMILY DENTAL CLINIC</h4>
+						<h4>COLOUR ME HAPPY</h4>
 						<h1 className="list-unstyled" style={{ fontSize: 15 }}>
-							<img src={logo1} alt="" style={{ paddingLeft: 0, width: 120, height: 120, paddingRight: 5 }} />
+							<img src={logo1} alt="" style={{ paddingLeft: 0, width: 150, height: 150, paddingRight: 5 }} />
 						</h1>
 					</div>
 
@@ -25,7 +25,7 @@ function Footer() {
 							<br></br>
 							<a href="/articles">DOCTORS BLOG</a>
 							<br></br>
-							<a href="/schedules">SCHEDULE</a>
+							<a href="/inquiries">CONTACT US</a>
 						</li>
 					</div>
 					{/* Column3 */}

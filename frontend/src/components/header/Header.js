@@ -1,6 +1,6 @@
 import React from "react";
 import "./navbar.css";
-import image1 from "./logo4.png";
+import image1 from "./mainlogo.png";
 import { Button, Form } from "react-bootstrap";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
@@ -34,24 +34,24 @@ function Header({ setSearch }) {
 					>
 						Blogs
 					</a>
-					<a
+					{/* <a
 						style={{ textDecoration: "none", color: "#0d5875", fontSize: "20px", marginLeft: "35px" }}
 						href="/common-view-feedback"
 					>
 						Reviews
-					</a>
+					</a> */}
 					<a
 						style={{ textDecoration: "none", color: "#0d5875", fontSize: "20px", marginLeft: "35px" }}
 						href="/inquiries"
 					>
 						Contact Us
 					</a>
-					<a
+					{/* <a
 						style={{ textDecoration: "none", color: "#0d5875", fontSize: "20px", marginLeft: "35px" }}
 						href="/schedules"
 					>
 						Schedule
-					</a>
+					</a> */}
 				</div>
 				<div className="search">
 					<Form inline>

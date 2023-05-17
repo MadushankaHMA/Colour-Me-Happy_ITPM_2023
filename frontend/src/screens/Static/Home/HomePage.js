@@ -15,7 +15,7 @@ function HomePage() {
 							<img
 								style={{ height: 400, width: 500 }}
 								className="d-block w-100"
-								src="https://media.istockphoto.com/photos/asian-young-attractive-woman-holding-orthodontic-retainers-in-dental-picture-id1311280330?k=20&m=1311280330&s=612x612&w=0&h=6shtEU4ruxV40WgwfSTNQUbPg9x6q3cuvXhSHDOtC8w="
+								src="https://firebasestorage.googleapis.com/v0/b/colour-me-happy-55339.appspot.com/o/download%20(1).jpg?alt=media&token=d00eeb27-03e5-4e7f-a0a1-ce4b18149c3b"
 								alt="First slide"
 							/>
 						</Carousel.Item>
@@ -23,7 +23,7 @@ function HomePage() {
 							<img
 								style={{ height: 400, width: 500 }}
 								className="d-block w-100"
-								src="https://media.istockphoto.com/photos/closeup-studio-photo-portrait-of-charming-satisfied-cute-friendly-picture-id1097747342?k=20&m=1097747342&s=612x612&w=0&h=OT6yvPiI29al2YsACAwuMW-yyvW2sHOcp11ssrECRw0="
+								src="https://firebasestorage.googleapis.com/v0/b/colour-me-happy-55339.appspot.com/o/AdobeStock_495359867-scaled.jpeg?alt=media&token=717f1035-cec2-42b7-b878-835f59131a57"
 								alt="Second slide"
 							/>
 						</Carousel.Item>
@@ -31,7 +31,7 @@ function HomePage() {
 							<img
 								style={{ height: 400, width: 500 }}
 								className="d-block w-100"
-								src="https://media.istockphoto.com/photos/beautiful-couple-together-standing-over-blue-background-smiling-with-picture-id1271266792?k=20&m=1271266792&s=612x612&w=0&h=nPqW92AgKh-aBUq5B7UnwT1DwlTqWwba-6sXL3RgKhQ="
+								src="https://firebasestorage.googleapis.com/v0/b/colour-me-happy-55339.appspot.com/o/world_mental_health_day_2022.jpeg?alt=media&token=5d0f1340-6925-463b-afaf-39337d32e040"
 								alt="Third slide"
 							/>
 						</Carousel.Item>
@@ -39,13 +39,13 @@ function HomePage() {
 							<img
 								style={{ height: 400, width: 500 }}
 								className="d-block w-100"
-								src="https://media.istockphoto.com/photos/close-up-portrait-of-fascinating-young-beautiful-wonderful-lady-in-picture-id1168130610?k=20&m=1168130610&s=612x612&w=0&h=NHE5x-rxktFgd391IAHRkCnU6vKndmiWgCaYg-Z7Tt4="
+								src="https://firebasestorage.googleapis.com/v0/b/colour-me-happy-55339.appspot.com/o/stuart-rimmer-mental-health-feat.jpg?alt=media&token=d0d4d3b5-c6e4-4754-b031-042a5806edfc"
 								alt="First slide"
 							/>
 						</Carousel.Item>
 					</Carousel>
 
-					<h1>Welcome To Family Dental Clinic</h1>
+					<h1>Welcome To Colour Me Happy</h1>
 					<p>What are you waiting for?</p>
 					<div className="home-btns">
 						<Button href="/login-select" className="btns">
