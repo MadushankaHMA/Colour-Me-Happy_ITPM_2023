@@ -16,7 +16,12 @@ const DoctorOperationPage = ({ history }) => {
 		return (
 			<div className="doctorBackground">
 				<MainScreen title={`Welcome Back ${doctorInfo && doctorInfo.name} ...`}>
-					<Button variant="danger" onClick={logoutHandler} className="logoutBtn" style={{ float: "right" }}>
+					<Button
+						variant="danger"
+						onClick={logoutHandler}
+						className="logoutBtn"
+						style={{ float: "right", marginTop: 7, width: "80px", height: "40px" }}
+					>
 						Logout
 					</Button>
 					<br></br>

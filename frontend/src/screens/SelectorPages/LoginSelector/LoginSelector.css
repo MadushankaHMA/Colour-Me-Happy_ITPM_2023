@@ -2,7 +2,8 @@
 	font-size: 95px;
 }
 .loginSelectBg {
-	background: url("../../../Images/loginView.png");
+	/* background-color: rgb(255, 255, 255); */
+	background: url("../../../Images/AdobeStock_495359867-scaled\ copy.jpg");
 	background-position: center;
 	background-size: cover;
 }

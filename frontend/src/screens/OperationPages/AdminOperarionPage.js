@@ -22,7 +22,7 @@ const AdminOperationPage = ({ history }) => {
 						variant="danger"
 						onClick={logoutHandler}
 						className="logoutBtn"
-						style={{ float: "right", marginTop: 7 }}
+						style={{ float: "right", marginTop: 7, width: "80px", height: "40px" }}
 					>
 						Logout
 					</Button>
@@ -96,13 +96,6 @@ const AdminOperationPage = ({ history }) => {
 									</Link>
 								</div>
 								<br></br>
-								<div>
-									<Link to="/schedule-Handling-View">
-										<Button size="lg" className="landingbutton">
-											Doctor's Schedule Management
-										</Button>
-									</Link>
-								</div>
 							</div>
 							<br></br>
 							<br></br>

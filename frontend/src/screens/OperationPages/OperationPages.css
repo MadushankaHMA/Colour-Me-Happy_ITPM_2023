@@ -1,17 +1,20 @@
 .adminBackground {
-	background: url("../../Images/admin.png");
+	background-color: rgb(255, 255, 255);
+	/* background: url("../../Images/admin.png");
 	background-position: center;
-	background-size: cover;
+	background-size: cover; */
 }
 .doctorBackground {
-	background: url("../../Images/doctor.png");
+	background-color: rgb(255, 255, 255);
+	/* background: url("../../Images/doctor.png");
 	background-position: center;
-	background-size: cover;
+	background-size: cover; */
 }
 .patientBackground {
-	background: url("../../Images/patient.png");
+	background-color: rgb(255, 255, 255);
+	/* background: url("../../Images/patient.png");
 	background-position: center;
-	background-size: cover;
+	background-size: cover; */
 }
 
 .title {
