@@ -48,12 +48,12 @@ const Inquiries = () => {
 							<video
 								playsInline="playsInline"
 								autoPlay="autoPlay"
-								muted="muted"
+								//muted="muted"
 								loop="loop"
 								style={{ width: "100%", marginTop: "10%", borderRadius: 20 }}
 							>
 								<source
-									src="https://res.cloudinary.com/family-dental-clinic/video/upload/v1653128009/THE_CLINIC_-_Intro_Trim_afou6k.mp4"
+									src="https://firebasestorage.googleapis.com/v0/b/colour-me-happy-55339.appspot.com/o/videoplayback.mp4?alt=media&token=f9852be7-95ea-46d6-987f-b6cc108558cd"
 									type="video/mp4"
 								/>
 							</video>

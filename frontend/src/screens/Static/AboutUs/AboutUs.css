@@ -3,15 +3,16 @@
 	height: 190vh;
 	display: flex;
 	flex-direction: column;
-	background: url("../../../Images/aboutus.jpg");
+	background: rgb(204, 229, 247);
+	/* background: url("../../../Images/aboutus.jpg");
 	background-position: center;
-	background-size: cover;
+	background-size: cover; */
 }
 
 .aboutTop {
 	width: 100%;
 	height: 50%;
-	background: url("../../../Images/about.jpg");
+	background: url("../../../Images/kelly-sikkema-XX2WTbLr3r8-unsplash.jpg");
 	background-position: center;
 	background-size: cover;
 	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;

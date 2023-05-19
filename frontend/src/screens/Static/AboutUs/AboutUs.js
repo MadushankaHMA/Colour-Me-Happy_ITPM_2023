@@ -25,45 +25,39 @@ function AboutUs() {
 							<b>WHY CHOOSE US?</b>
 						</h3>
 						<p>
-							Our team of dedicated dental professionals are enthusiastic about their dentistry. As a team, they work
-							together to compl​ement and support each other to provide you with an excellent comprehensive range of
-							dental treatments from smile enhancements to routine family check​-ups. We understand that every
-							individual is unique so we provide a customised level of personalised care. Therefore, you can be
-							confident that you’re receiving the best and most appropriate treatment for your dental needs. Our
-							satisfaction is in providing high-quality dental treatment that is long-lasting, so that you can achieve
-							good oral health and maintain a wonderful, bright healthy smile.
+							We understand that choosing the right psychiatric platform is crucial for your mental well-being. That's
+							why we stand out by providing a patient-centered approach, tailored to your unique needs. With us, you can
+							expect compassionate care, a user-friendly experience, and a commitment to your overall mental wellness.
 						</p>
 
 						<br />
 
 						<h3>
-							<b>EXCELLENCE IN DENAL CARE</b>
+							<b>EXCELLENCE IN PSYCHIATRIC SERVICE</b>
 						</h3>
 						<p>
-							Our commitment to excel in our profession is further evident by our unique approach to stand behind our
-							treatment to you. As a result, we offer limited dental warranty for the investment you have made in
-							preserving your oral health. Our goal is not only to treat your current dental problems but also to
-							educate you in preventing further tooth decay. We would like to be proactive in helping you maintain your
-							oral health at its best for the years to come.
+							Our platform prides itself on delivering excellence in psychiatric services. We uphold the highest
+							standards of evidence-based practices, ensuring that you receive the most effective and up-to-date
+							treatments available. Our team of dedicated professionals is passionate about helping you achieve your
+							mental health goals.
 						</p>
 						<br />
 						<h3>
 							<b>EXPERIENCED STAFF</b>
 						</h3>
 						<p>
-							Meet the team! All our staff are continually training further to enable us to keep up to date with the
-							latest advances in the dental world. All our staff are very experienced and GDC registered. We maintain
-							high ethical standards and have the same goals of providing high standard dentistry in a comfortable pain
-							free surrounding.
+							Our platform is home to a team of experienced psychiatrists who have honed their skills through years of
+							practice. With their expertise and deep understanding of various mental health conditions, they are
+							equipped to provide accurate diagnoses, personalized treatment plans, and compassionate care.
 						</p>
 						<br />
 						<h3>
-							<b>ETHICAL DENTAL CARE</b>
+							<b>ETHICAL PSYCHIATRIC SERVICE</b>
 						</h3>
 						<p>
-							Our dentists and hygienists believe that it is important to make your teeth look great, the health of your
-							teeth however is the most important aspect. We will spend the extra time to be transparent with all our
-							treatment and what to expect from them.
+							We firmly believe in providing ethical psychiatric services, guided by integrity, professionalism, and
+							respect for your privacy. Your trust is of utmost importance to us, and we ensure confidentiality in all
+							aspects of your care. Rest assured that your information is safe and secure with us.
 						</p>
 					</Card.Body>
 				</Card>

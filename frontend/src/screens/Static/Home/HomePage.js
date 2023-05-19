@@ -72,13 +72,12 @@ function HomePage() {
 									marginLeft: 2,
 									marginRight: 2,
 								}}
-								src="https://media.istockphoto.com/photos/3d-render-of-tooth-calendar-and-dental-diagnostic-instruments-over-picture-id1225834953?k=20&m=1225834953&s=612x612&w=0&h=Kxr4sd4pVmu8T_9bcUtq1zkVZ3F3vaku_XPG5mBAoys="
+								src="https://firebasestorage.googleapis.com/v0/b/colour-me-happy-55339.appspot.com/o/istockphoto-1409304190-2048x2048-transformed.jpeg?alt=media&token=c72edcc7-50d1-4fbb-9c6b-a7d31701d35c"
 							/>
 							<Card.Body>
-								<Card.Title>Doctor’s Schedule</Card.Title>
+								<Card.Title>Psychiatric's Shedule</Card.Title>
 								<Card.Text>
-									Go to Doctor’s Schedule and find your specialist doctor today. Aim to provide the best dental clinic
-									service. We provide you the best dental clinic service.
+									Easily view and manage appointment availability for psychiatrists on our platform.
 								</Card.Text>
 							</Card.Body>
 						</Card>
@@ -97,12 +96,13 @@ function HomePage() {
 									marginLeft: 2,
 									marginRight: 2,
 								}}
-								src="https://media.istockphoto.com/photos/dentist-appointment-picture-id505498068?k=20&m=505498068&s=612x612&w=0&h=MmaB7vyztl0jmLX8SHS16xu0qaZIJXh3vd4lk7US5zk="
+								src="https://firebasestorage.googleapis.com/v0/b/colour-me-happy-55339.appspot.com/o/istockphoto-1352603244-2048x2048-transformed.jpeg?alt=media&token=011e0f76-848c-461a-9070-3bc413a14bce"
 							/>
 							<Card.Body>
-								<Card.Title>Appointments</Card.Title>
+								<Card.Title>Psychiatric's Article Blog</Card.Title>
 								<Card.Text>
-									Easy, quick and safest way to book your appointments.Make an appointment with your favorite doctor.
+									Stay updated and informed with insightful articles on mental health written by our expert
+									psychiatrists.
 								</Card.Text>
 							</Card.Body>
 						</Card>
@@ -120,13 +120,12 @@ function HomePage() {
 									marginLeft: 2,
 									marginRight: 2,
 								}}
-								src="https://media.istockphoto.com/photos/dentist-and-her-assistant-performing-dental-drilling-on-young-woman-picture-id936750238?k=20&m=936750238&s=612x612&w=0&h=tg9hBPrrjyJnDNb1ezLb28GLoaAJh10K8wzWKiBzFZ0="
+								src="https://firebasestorage.googleapis.com/v0/b/colour-me-happy-55339.appspot.com/o/istockphoto-1406496671-2048x2048-transformed.jpeg?alt=media&token=93e05b45-5721-4f2e-9e0f-2e7df6a7b846"
 							/>
 							<Card.Body>
 								<Card.Title>Best Treatments</Card.Title>
 								<Card.Text>
-									Treatments are based on your needs. You can choose the treatment that works best for you. Our dental
-									provide high quality dental care.
+									Explore a comprehensive range of top-quality psychiatric treatments tailored to individual needs.
 								</Card.Text>
 							</Card.Body>
 						</Card>
@@ -141,13 +140,12 @@ function HomePage() {
 								className="image"
 								variant="top"
 								style={{ height: 200, width: 300, alignSelf: "center", marginLeft: 2, marginRight: 2, marginTop: 20 }}
-								src="https://media.istockphoto.com/photos/dentist-showing-a-patient-her-xray-picture-id654945798?k=20&m=654945798&s=612x612&w=0&h=MU8fUumxflXUhzRbo9Kj_0B4KadXrx6GVIL-YDBPcVM="
+								src="https://firebasestorage.googleapis.com/v0/b/colour-me-happy-55339.appspot.com/o/istockphoto-1021543918-2048x2048-transformed.jpeg?alt=media&token=ca53f0a3-12a1-4e52-8c03-03390ac04561"
 							/>
 							<Card.Body>
 								<Card.Title>Medical History </Card.Title>
 								<Card.Text>
-									The past medical history is an overall view of the patient's health prior to the present illness.You
-									can view, add your medical history.
+									Maintain a secure and accessible record of your psychiatric medical history for informed care.
 								</Card.Text>
 							</Card.Body>
 						</Card>
@@ -165,13 +163,12 @@ function HomePage() {
 									marginLeft: 2,
 									marginRight: 2,
 								}}
-								src="https://media.istockphoto.com/photos/little-girl-learning-how-to-brush-her-teeth-at-dentists-office-picture-id878852372?k=20&m=878852372&s=612x612&w=0&h=xZGNeI4ZWVpPf-DyMSHO9TwCbN83rlXUdI02MyZW7i4="
+								src="https://firebasestorage.googleapis.com/v0/b/colour-me-happy-55339.appspot.com/o/istockphoto-1334288822-2048x2048-transformed.jpeg?alt=media&token=01fb2c71-548d-4282-a3c0-86b214697d65"
 							/>
 							<Card.Body>
-								<Card.Title>Doctor’s Article Blog </Card.Title>
+								<Card.Title>Feedback </Card.Title>
 								<Card.Text>
-									Read and upgrade your knowledge about oral health and dentistry here. Check out our blog for all your
-									tips on all aspects of dental care.
+									Share your valuable feedback to help us continually improve and enhance our psychiatric services.
 								</Card.Text>
 							</Card.Body>
 						</Card>
@@ -189,13 +186,13 @@ function HomePage() {
 									marginLeft: 2,
 									marginRight: 2,
 								}}
-								src="https://media.istockphoto.com/photos/portrait-of-two-young-dentists-showing-thumbs-up-in-their-consulting-picture-id1371010290?k=20&m=1371010290&s=612x612&w=0&h=ifiqMqVIfsoPUtI4yk9yHQURHf705E0i4-9bSUziCqM="
+								src="https://firebasestorage.googleapis.com/v0/b/colour-me-happy-55339.appspot.com/o/istockphoto-1357394932-2048x2048-transformed.jpeg?alt=media&token=d4395c54-6781-481a-85da-d418df6c113f"
 							/>
 							<Card.Body>
-								<Card.Title>Feedback and Q&A </Card.Title>
+								<Card.Title>Q&A</Card.Title>
 								<Card.Text>
-									Our Family Dental Clinic offers quality dental treatments. Please take a moment to provide us with
-									your feedback.
+									Get answers to your pressing mental health questions from our team of experienced psychiatrists
+									directly on the homepage.
 								</Card.Text>
 							</Card.Body>
 						</Card>

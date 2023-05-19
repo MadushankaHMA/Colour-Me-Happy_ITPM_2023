@@ -4,20 +4,23 @@
 	margin: 20px;
 }
 .adminLoginBg {
-	background: url("../../../Images/admin-login.png");
+	background: rgba(255, 255, 255);
+	/* background: url("../../../Images/admin-login.png");
 	background-position: center;
 	background-size: cover;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat; */
 }
 .doctorLoginBg {
-	background: url("../../../Images/doctor-login.png");
+	background: rgba(255, 255, 255);
+	/* background: url("../../../Images/doctor-login.png");
 	background-position: center;
 	background-size: cover;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat; */
 }
 .patientLoginBg {
-	background: url("../../../Images/patient-login.png");
+	background: rgba(255, 255, 255);
+	/* background: url("../../../Images/patient-login.png");
 	background-position: center;
 	background-size: cover;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat; */
 }

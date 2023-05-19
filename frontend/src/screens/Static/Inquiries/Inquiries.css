@@ -9,7 +9,8 @@
 	padding: 20px;
 }
 .Inquiries {
-	background: url("../../../Images/Inquiries.jpg");
+	background-color: rgb(210, 236, 239);
+	/* background: url("../../../Images/Inquiries.jpg");
 	background-position: center;
-	background-size: cover;
+	background-size: cover; */
 }

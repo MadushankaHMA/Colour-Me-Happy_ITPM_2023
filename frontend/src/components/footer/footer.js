@@ -32,29 +32,29 @@ function Footer() {
 					<div className="col">
 						<h4>POPULAR LINKS</h4>
 						<li className="list-unstyled">
-							<a href="/common-view-feedback">REVEIWS</a>
+							<a href="/treatment">TREATMENT</a>
 							<br></br>
 							<a href="/common-view-question">Q & A</a>
 							<br></br>
 							<a href="/TermsAndCondtions">TERMS & CONDITIONS</a>
 							<br></br>
-							<a href="/services">SERVICES</a>
+							<a href="/MedicalHistory">MEDICAL HISTORY</a>
 						</li>
 					</div>
 					{/* Column4 */}
 					<div className="col">
 						<h4>CONTACT</h4>
 						<ul className="list-unstyled">
-							<li>ADDRESS : 276/2F, Wackwalla Road, Galle</li>
-							<li>PHONE : 071 818 7288</li>
-							<li>EMAIL : familydentalclinic@gmail.com</li>
+							<li>ADDRESS : No,18,Kaduwela Rd,Malabe</li>
+							<li>PHONE : 077-3872701</li>
+							<li>EMAIL : ColourMeHappy@gmail.com</li>
 						</ul>
 					</div>
 				</div>
 				<hr />
 				<div className="row">
 					<p className="col-sm">
-						&copy;{new Date().getFullYear()} site by ByteBusters | Family Dental Clinic | All rights reserved |
+						&copy;{new Date().getFullYear()} SITE BY CREW X | Colour Me Happy | All rights reserved |
 					</p>
 				</div>
 			</div>
