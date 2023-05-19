@@ -11,9 +11,10 @@
 }
 
 .createArticles {
-	background: url("../../Images/blog-create-background.jpg");
+	background: #dbf3f9;
+	/* background: url("../../Images/blog-create-background.jpg");
 	background-position: center;
-	background-size: cover;
+	background-size: cover; */
 }
 
 .singleArticles {

@@ -1,7 +1,8 @@
 .blogReportBg {
-	background: url("../../../Images/blogs-background.jpg");
+	background: #e4f1f9;
+	/* background: url("../../../Images/blogs-background.jpg");
 	background-position: center;
-	background-size: cover;
+	background-size: cover; */
 }
 
 .denied {

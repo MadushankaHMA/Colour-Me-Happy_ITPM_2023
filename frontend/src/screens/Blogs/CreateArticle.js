@@ -11,7 +11,7 @@ function CreateBlog({ history }) {
 	const [title, setTitle] = useState("");
 	const [description, setDescription] = useState("");
 	const [image, setImage] = useState(
-		"https://www.americandentalclinic.com/wp-content/uploads/2022/04/shutterstock_1893722440.jpg"
+		"https://firebasestorage.googleapis.com/v0/b/colour-me-happy-55339.appspot.com/o/tim-mossholder-8R-mXppeakM-unsplash.jpg?alt=media&token=4adc829b-caef-4b8a-a4c9-40bb48b35a9b"
 	);
 
 	const dispatch = useDispatch();
@@ -22,7 +22,9 @@ function CreateBlog({ history }) {
 		setDescription(
 			"Root canal therapy basically involves restoring the function, and appearance of a decayed or infected tooth. Many people put off this procedure due to the fear of possible discomfort or about how long it’ll take to recover. The good news is that a root canal treatment is actually quite straightforward and far more comfortable and painless with a very short recovery period, thanks to modern advancements in dental technology. "
 		);
-		setImage("https://www.americandentalclinic.com/wp-content/uploads/2022/05/shutterstock_766328671.jpg");
+		setImage(
+			"https://firebasestorage.googleapis.com/v0/b/colour-me-happy-55339.appspot.com/o/tim-mossholder-8R-mXppeakM-unsplash.jpg?alt=media&token=4adc829b-caef-4b8a-a4c9-40bb48b35a9b"
+		);
 	};
 
 	const blogCreate = useSelector((state) => state.blogCreate);

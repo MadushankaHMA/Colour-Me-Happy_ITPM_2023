@@ -70,19 +70,7 @@ const AdminOperationPage = ({ history }) => {
 									</Link>
 								</div>
 								<br></br>
-								<div>
-									<Link to="/inventory-view">
-										<Button size="lg" className="landingbutton">
-											Inventory Management
-										</Button>
-									</Link>
-									<Link to="/admin-feedback-Q&A">
-										<Button size="lg" className="landingbutton">
-											Feedback and Q & A Management
-										</Button>
-									</Link>
-								</div>
-								<br></br>
+
 								<div>
 									<Link to="/admin-blog-report">
 										<Button size="lg" className="landingbutton">
