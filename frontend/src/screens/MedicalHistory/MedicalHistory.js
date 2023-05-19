@@ -171,15 +171,15 @@ const MedicalHistory = ({ search }) => {
 												<h6>Patient Name: {medicalHistory.pname}</h6>
 												<hr />
 												<h4>
-													<b>Previous Dental History</b>
+													<b>Previous Medical History</b>
 												</h4>
-												<h6>{medicalHistory.previousDentalhistory}</h6>
+												<h6>{medicalHistory.previousMedicalhistory}</h6>
 												<hr />
-												<h4>
+												{/* <h4>
 													<b>Dental Concerns</b>
 												</h4>
 												<h6>{medicalHistory.dentalConcerns}</h6>
-												<hr />
+												<hr /> */}
 												<h4>
 													<b>Medical Concerns</b>
 												</h4>
@@ -197,7 +197,7 @@ const MedicalHistory = ({ search }) => {
 												</h6>
 												<h6> {medicalHistory.otherDiseases}</h6>
 												<br />
-												<h6>
+												{/* <h6>
 													<b>*Confirmed Details Related to COVID-19*</b>
 												</h6>
 												<br />
@@ -216,7 +216,7 @@ const MedicalHistory = ({ search }) => {
 												<h6>
 													<b>The patient has been in contact with any person with confirmed COVID-19:</b>
 												</h6>
-												<h6>{medicalHistory.covidConfirmation}</h6>
+												<h6>{medicalHistory.covidConfirmation}</h6> */}
 											</div>
 										</Card.Body>
 									</Accordion.Collapse>

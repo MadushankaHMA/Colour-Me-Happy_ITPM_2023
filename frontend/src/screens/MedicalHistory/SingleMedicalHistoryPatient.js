@@ -5,22 +5,28 @@ import { Button, Card, Form } from "react-bootstrap";
 import { useSelector } from "react-redux";
 import { authHeader } from "../../actions/patientActions";
 import "./MedicalHistory.css";
+import { useDispatch } from "react-redux";
+import error from "../../components/ErrorMessage";
+import { createMedicalHistoryAction } from "../../actions/medicalHistoryAction";
+import loading from "../../components/Loading";
 
 function SingleMedicalHistoryPatient() {
 	const [nic, setNic] = useState();
 	const [pname, setPname] = useState();
-	const [previousDentalhistory, setPreviousDentalhistory] = useState();
-	const [dentalConcerns, setDentalConcerns] = useState();
+	const [previousMedicalhistory, setpreviousMedicalhistory] = useState();
+	// const [dentalConcerns, setDentalConcerns] = useState();
 	const [medicalConcerns, setMedicalConcerns] = useState();
 	const [currentMedications, setCurrentMedications] = useState();
 	const [otherDiseases, setOtherDiseases] = useState();
-	const [vaccinations, setVaccinations] = useState();
-	const [covidDiagnose, setCovidDiagnose] = useState();
-	const [fluSymptoms, setFluSymptoms] = useState();
-	const [covidConfirmation, setCovidConfirmation] = useState();
+	// const [vaccinations, setVaccinations] = useState();
+	// const [covidDiagnose, setCovidDiagnose] = useState();
+	// const [fluSymptoms, setFluSymptoms] = useState();
+	// const [covidConfirmation, setCovidConfirmation] = useState();
 
 	const patient_Login = useSelector((state) => state.patient_Login);
 	const { patientInfo } = patient_Login;
+
+	const dispatch = useDispatch();
 
 	useEffect(() => {
 		if (patientInfo) {
@@ -31,20 +37,27 @@ function SingleMedicalHistoryPatient() {
 
 				setNic(data.nic);
 				setPname(data.pname);
-				setPreviousDentalhistory(data.previousDentalhistory);
-				setDentalConcerns(data.dentalConcerns);
+				setpreviousMedicalhistory(data.previousMedicalhistory);
+				// setDentalConcerns(data.dentalConcerns);
 				setMedicalConcerns(data.medicalConcerns);
 				setCurrentMedications(data.currentMedications);
 				setOtherDiseases(data.otherDiseases);
-				setVaccinations(data.vaccinations);
-				setCovidDiagnose(data.covidDiagnose);
-				setFluSymptoms(data.fluSymptoms);
-				setCovidConfirmation(data.covidConfirmation);
+				// setVaccinations(data.vaccinations);
+				// setCovidDiagnose(data.covidDiagnose);
+				// setFluSymptoms(data.fluSymptoms);
+				// setCovidConfirmation(data.covidConfirmation);
 			};
 
 			fetching();
 		}
 	});
+
+	const submitHandler = (e) => {
+		e.preventDefault();
+		if (!nic || !pname || !previousMedicalhistory || !medicalConcerns || !currentMedications || !otherDiseases) return;
+		dispatch(createMedicalHistoryAction(nic, pname, previousMedicalhistory,medicalConcerns,currentMedications,otherDiseases,));
+
+	};
 
 	if (patientInfo) {
 		return (
@@ -91,7 +104,8 @@ function SingleMedicalHistoryPatient() {
 							</h4>
 						</Card.Header>
 						<Card.Body>
-							<Form>
+							<Form onSubmit={submitHandler}>
+								{error && <error variant="danger">{error}</error>}
 								<h6>
 									<b>Patient Details</b>
 								</h6>
@@ -105,20 +119,20 @@ function SingleMedicalHistoryPatient() {
 									<Form.Control type="pname" value={pname} />
 								</Form.Group>
 								<br />
-								<Form.Group controlId="previousDentalhistory">
+								<Form.Group controlId="previousMedicalhistory">
 									<Form.Label>
-										<b>Previous Dental History</b>
+										<b>Previous Medical History</b>
 									</Form.Label>
-									<Form.Control as="textarea" value={previousDentalhistory} rows={4} />
+									<Form.Control as="textarea" value={previousMedicalhistory} rows={4} />
 								</Form.Group>
 
-								<h6>
+								{/* <h6>
 									<b>Dental Concerns</b>
 								</h6>
 								<Form.Group controlId="dentalConcerns">
 									<Form.Label> Dental concerns you have*</Form.Label>
 									<Form.Control as="textarea" value={dentalConcerns} rows={4} />
-								</Form.Group>
+								</Form.Group> */}
 								<h6>
 									<b>Medical Concerns</b>
 								</h6>
@@ -140,7 +154,7 @@ function SingleMedicalHistoryPatient() {
 									<Form.Control as="textarea" value={otherDiseases} rows={4} />
 								</Form.Group>
 
-								<h6>
+								{/* <h6>
 									<b>* Required Patient Information , Due to COVID-19 pandemic *</b>
 								</h6>
 								<Form.Group controlId="vaccinations">
@@ -156,14 +170,18 @@ function SingleMedicalHistoryPatient() {
 								<Form.Group controlId="fluSymptoms">
 									<Form.Label>The patient is haveing a fever or a cough or any other flu symptoms</Form.Label>
 									<Form.Control type="fluSymptoms" value={fluSymptoms} />
-								</Form.Group>
+								</Form.Group> */}
 
-								<Form.Group controlId="covidConfirmation">
+								{/* <Form.Group controlId="covidConfirmation">
 									<Form.Label>The patient has been in contact with any person with confirmed COVID-19</Form.Label>
 									<Form.Control type="covidConfirmation" value={covidConfirmation} />
-								</Form.Group>
+								</Form.Group> */}
 
 								<br />
+								{loading && <loading size={50} />}
+								<Button type="submit" variant="primary">
+									Create Article
+								</Button>
 							</Form>
 						</Card.Body>
 					</Card>

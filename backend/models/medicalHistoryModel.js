@@ -9,14 +9,14 @@ const medicalHistorySchema = mongoose.Schema({
 		type: String,
 		required: true,
 	},
-	previousDentalhistory: {
+	previousMedicalhistory: {
 		type: String,
 		required: true,
 	},
-	dentalConcerns: {
-		type: String,
-		required: true,
-	},
+	// dentalConcerns: {
+	// 	type: String,
+	// 	required: true,
+	// },
 	medicalConcerns: {
 		type: String,
 		required: true,
@@ -29,22 +29,22 @@ const medicalHistorySchema = mongoose.Schema({
 		type: String,
 		required: true,
 	},
-	vaccinations: {
-		type: String,
-		required: true,
-	},
-	covidDiagnose: {
-		type: String,
-		required: true,
-	},
-	fluSymptoms: {
-		type: String,
-		required: true,
-	},
-	covidConfirmation: {
-		type: String,
-		required: true,
-	},
+	// vaccinations: {
+	// 	type: String,
+	// 	required: true,
+	// },
+	// covidDiagnose: {
+	// 	type: String,
+	// 	required: true,
+	// },
+	// fluSymptoms: {
+	// 	type: String,
+	// 	required: true,
+	// },
+	// covidConfirmation: {
+	// 	type: String,
+	// 	required: true,
+	// },
 	year: {
 		default: new Date().getFullYear(),
 		type: String,

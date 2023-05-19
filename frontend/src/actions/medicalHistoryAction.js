@@ -56,15 +56,14 @@ export const createMedicalHistoryAction =
 	(
 		nic,
 		pname,
-		previousDentalhistory,
-		dentalConcerns,
+		previousMedicalhistory,
 		medicalConcerns,
 		currentMedications,
-		otherDiseases,
-		vaccinations,
-		covidDiagnose,
-		fluSymptoms,
-		covidConfirmation
+		otherDiseases
+		// vaccinations,
+		// covidDiagnose,
+		// fluSymptoms,
+		// covidConfirmation
 	) =>
 	async (dispatch, getState) => {
 		try {
@@ -88,15 +87,14 @@ export const createMedicalHistoryAction =
 				{
 					nic,
 					pname,
-					previousDentalhistory,
-					dentalConcerns,
+					previousMedicalhistory,
 					medicalConcerns,
 					currentMedications,
 					otherDiseases,
-					vaccinations,
-					covidDiagnose,
-					fluSymptoms,
-					covidConfirmation,
+					// vaccinations,
+					// covidDiagnose,
+					// fluSymptoms,
+					// covidConfirmation,
 				},
 				config
 			);
@@ -126,15 +124,14 @@ export const updateMedicalHistoryAction =
 		id,
 		nic,
 		pname,
-		previousDentalhistory,
-		dentalConcerns,
+		previousMedicalhistory,
 		medicalConcerns,
 		currentMedications,
-		otherDiseases,
-		vaccinations,
-		covidDiagnose,
-		fluSymptoms,
-		covidConfirmation
+		otherDiseases
+		// vaccinations,
+		// covidDiagnose,
+		// fluSymptoms,
+		// covidConfirmation
 	) =>
 	async (dispatch, getState) => {
 		try {
@@ -158,15 +155,14 @@ export const updateMedicalHistoryAction =
 				{
 					nic,
 					pname,
-					previousDentalhistory,
-					dentalConcerns,
+					previousMedicalhistory,
 					medicalConcerns,
 					currentMedications,
 					otherDiseases,
-					vaccinations,
-					covidDiagnose,
-					fluSymptoms,
-					covidConfirmation,
+					// vaccinations,
+					// covidDiagnose,
+					// fluSymptoms,
+					// covidConfirmation,
 				},
 				config
 			);
@@ -259,14 +255,13 @@ export const patientViewMedicalHistoryAction =
 		nic,
 		pname,
 		previousDentalhistory,
-		dentalConcerns,
 		medicalConcerns,
 		currentMedications,
-		otherDiseases,
-		vaccinations,
-		covidDiagnose,
-		fluSymptoms,
-		covidConfirmation
+		otherDiseases
+		// vaccinations,
+		// covidDiagnose,
+		// fluSymptoms,
+		// covidConfirmation
 	) =>
 	async (dispatch, getState) => {
 		try {
@@ -291,14 +286,13 @@ export const patientViewMedicalHistoryAction =
 					nic,
 					pname,
 					previousDentalhistory,
-					dentalConcerns,
 					medicalConcerns,
 					currentMedications,
 					otherDiseases,
-					vaccinations,
-					covidDiagnose,
-					fluSymptoms,
-					covidConfirmation,
+					// vaccinations,
+					// covidDiagnose,
+					// fluSymptoms,
+					// covidConfirmation,
 				},
 				config
 			);

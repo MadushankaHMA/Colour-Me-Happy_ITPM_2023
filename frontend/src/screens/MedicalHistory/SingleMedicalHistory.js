@@ -14,15 +14,11 @@ import swal from "sweetalert";
 function SingleMedicalHistory({ match, history }) {
 	const [nic, setNic] = useState("");
 	const [pname, setPname] = useState("");
-	const [previousDentalhistory, setPreviousDentalhistory] = useState("");
-	const [dentalConcerns, setDentalConcerns] = useState("");
+	const [previousMedicalhistory, setpreviousMedicalhistory] = useState("");
 	const [medicalConcerns, setMedicalConcerns] = useState("");
 	const [currentMedications, setCurrentMedications] = useState("");
 	const [otherDiseases, setOtherDiseases] = useState("");
-	const [vaccinations, setVaccinations] = useState("");
-	const [covidDiagnose, setCovidDiagnose] = useState("");
-	const [fluSymptoms, setFluSymptoms] = useState("");
-	const [covidConfirmation, setCovidConfirmation] = useState("");
+
 
 	const dispatch = useDispatch();
 
@@ -75,15 +71,11 @@ function SingleMedicalHistory({ match, history }) {
 
 				setNic(data.nic);
 				setPname(data.pname);
-				setPreviousDentalhistory(data.previousDentalhistory);
-				setDentalConcerns(data.dentalConcerns);
+				setpreviousMedicalhistory(data.previousMedicalhistory);
 				setMedicalConcerns(data.medicalConcerns);
 				setCurrentMedications(data.currentMedications);
 				setOtherDiseases(data.otherDiseases);
-				setVaccinations(data.vaccinations);
-				setCovidDiagnose(data.covidDiagnose);
-				setFluSymptoms(data.fluSymptoms);
-				setCovidConfirmation(data.covidConfirmation);
+
 			};
 
 			fetching();
@@ -93,15 +85,15 @@ function SingleMedicalHistory({ match, history }) {
 	const resetHandler = () => {
 		setNic("");
 		setPname("");
-		setPreviousDentalhistory("");
-		setDentalConcerns("");
+		setpreviousMedicalhistory("");
+		// setDentalConcerns("");
 		setMedicalConcerns("");
 		setCurrentMedications("");
 		setOtherDiseases("");
-		setVaccinations("");
-		setCovidDiagnose("");
-		setFluSymptoms("");
-		setCovidConfirmation("");
+		// setVaccinations("");
+		// setCovidDiagnose("");
+		// setFluSymptoms("");
+		// setCovidConfirmation("");
 	};
 
 	const updateHandler = (e) => {
@@ -111,29 +103,29 @@ function SingleMedicalHistory({ match, history }) {
 				match.params.id,
 				nic,
 				pname,
-				previousDentalhistory,
-				dentalConcerns,
+				previousMedicalhistory,
+				// dentalConcerns,
 				medicalConcerns,
 				currentMedications,
-				otherDiseases,
-				vaccinations,
-				covidDiagnose,
-				fluSymptoms,
-				covidConfirmation
+				otherDiseases
+				// vaccinations,
+				// covidDiagnose,
+				// fluSymptoms,
+				// covidConfirmation
 			)
 		);
 		if (
 			!nic ||
 			!pname ||
-			!previousDentalhistory ||
-			!dentalConcerns ||
+			!previousMedicalhistory ||
+			// !dentalConcerns ||
 			!medicalConcerns ||
 			!currentMedications ||
-			!otherDiseases ||
-			!vaccinations ||
-			!covidDiagnose ||
-			!fluSymptoms ||
-			!covidConfirmation
+			!otherDiseases 
+			// !vaccinations ||
+			// !covidDiagnose ||
+			// !fluSymptoms ||
+			// !covidConfirmation
 		)
 			return;
 
@@ -217,20 +209,20 @@ function SingleMedicalHistory({ match, history }) {
 									/>
 								</Form.Group>
 
-								<Form.Group controlId="previousDentalhistory">
+								<Form.Group controlId="previousMedicalhistory">
 									<Form.Label>
-										<b>Previous Dental History</b>
+										<b>Previous Medical History</b>
 									</Form.Label>
 									<Form.Control
 										as="textarea"
-										value={previousDentalhistory}
+										value={previousMedicalhistory}
 										placeholder="Enter the previous dental history"
 										rows={4}
-										onChange={(e) => setPreviousDentalhistory(e.target.value)}
+										onChange={(e) => setpreviousMedicalhistory(e.target.value)}
 										required
 									/>
 								</Form.Group>
-								<h6>
+								{/* <h6>
 									<b>Dental Concerns</b>
 								</h6>
 								<Form.Group controlId="dentalConcerns">
@@ -243,7 +235,7 @@ function SingleMedicalHistory({ match, history }) {
 										onChange={(e) => setDentalConcerns(e.target.value)}
 										required
 									/>
-								</Form.Group>
+								</Form.Group> */}
 
 								<h6>
 									<b>Medical Concerns</b>
@@ -285,7 +277,7 @@ function SingleMedicalHistory({ match, history }) {
 										required
 									/>
 								</Form.Group>
-								<h6>
+								{/* <h6>
 									<b>* Due to COVID-19 pandemic , We ask you to fill out questions in below *</b>
 								</h6>
 								<Form.Group controlId="vaccinations">
@@ -297,9 +289,9 @@ function SingleMedicalHistory({ match, history }) {
 										onChange={(e) => setVaccinations(e.target.value)}
 										required
 									/>
-								</Form.Group>
+								</Form.Group> */}
 
-								<Form.Group controlId="covidDiagnose">
+								{/* <Form.Group controlId="covidDiagnose">
 									<Form.Label>
 										Have you previously been diagnosed with COVID-19 or do you think you have had/have COVID-19?
 									</Form.Label>
@@ -310,9 +302,9 @@ function SingleMedicalHistory({ match, history }) {
 										onChange={(e) => setCovidDiagnose(e.target.value)}
 										required
 									/>
-								</Form.Group>
+								</Form.Group> */}
 
-								<Form.Group controlId="fluSymptoms">
+								{/* <Form.Group controlId="fluSymptoms">
 									<Form.Label>Do you have a fever or a cough or any other flu symptoms?</Form.Label>
 									<Form.Control
 										type="fluSymptoms"
@@ -332,7 +324,7 @@ function SingleMedicalHistory({ match, history }) {
 										onChange={(e) => setCovidConfirmation(e.target.value)}
 										required
 									/>
-								</Form.Group>
+								</Form.Group> */}
 								<br />
 								{loading && <Loading size={50} />}
 								<Button type="submit" variant="primary">

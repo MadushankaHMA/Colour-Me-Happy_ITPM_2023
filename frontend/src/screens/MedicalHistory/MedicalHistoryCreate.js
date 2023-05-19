@@ -11,15 +11,15 @@ import "./MedicalHistory.css";
 function MedicalHistoryCreate({ history }) {
 	const [nic, setNic] = useState("");
 	const [pname, setPname] = useState("");
-	const [previousDentalhistory, setPreviousDentalhistory] = useState("");
-	const [dentalConcerns, setDentalConcerns] = useState("");
+	const [previousMedicalhistory, setpreviousMedicalhistory] = useState("");
+	// const [dentalConcerns, setDentalConcerns] = useState("");
 	const [medicalConcerns, setMedicalConcerns] = useState("");
 	const [currentMedications, setCurrentMedications] = useState("");
 	const [otherDiseases, setOtherDiseases] = useState("");
-	const [vaccinations, setVaccinations] = useState("");
-	const [covidDiagnose, setCovidDiagnose] = useState("");
-	const [fluSymptoms, setFluSymptoms] = useState("");
-	const [covidConfirmation, setCovidConfirmation] = useState("");
+	// const [vaccinations, setVaccinations] = useState("");
+	// const [covidDiagnose, setCovidDiagnose] = useState("");
+	// const [fluSymptoms, setFluSymptoms] = useState("");
+	// const [covidConfirmation, setCovidConfirmation] = useState("");
 
 	const dispatch = useDispatch();
 
@@ -34,15 +34,15 @@ function MedicalHistoryCreate({ history }) {
 	const resetHandler = () => {
 		setNic("");
 		setPname("");
-		setPreviousDentalhistory("");
-		setDentalConcerns("");
+		setpreviousMedicalhistory("");
+		// setDentalConcerns("");
 		setMedicalConcerns("");
 		setCurrentMedications("");
 		setOtherDiseases("");
-		setVaccinations("");
-		setCovidDiagnose("");
-		setFluSymptoms("");
-		setCovidConfirmation("");
+		// setVaccinations("");
+		// setCovidDiagnose("");
+		// setFluSymptoms("");
+		// setCovidConfirmation("");
 	};
 
 	const submitHandler = (e) => {
@@ -50,30 +50,30 @@ function MedicalHistoryCreate({ history }) {
 		if (
 			!nic ||
 			!pname ||
-			!previousDentalhistory ||
-			!dentalConcerns ||
+			!previousMedicalhistory ||
+			// !dentalConcerns ||
 			!medicalConcerns ||
 			!currentMedications ||
-			!otherDiseases ||
-			!vaccinations ||
-			!covidDiagnose ||
-			!fluSymptoms ||
-			!covidConfirmation
+			!otherDiseases 
+			// !vaccinations ||
+			// !covidDiagnose ||
+			// !fluSymptoms ||
+			// !covidConfirmation
 		)
 			return;
 		dispatch(
 			createMedicalHistoryAction(
 				nic,
 				pname,
-				previousDentalhistory,
-				dentalConcerns,
+				previousMedicalhistory,
+				// dentalConcerns,
 				medicalConcerns,
 				currentMedications,
-				otherDiseases,
-				vaccinations,
-				covidDiagnose,
-				fluSymptoms,
-				covidConfirmation
+				otherDiseases
+				// vaccinations,
+				// covidDiagnose,
+				// fluSymptoms,
+				// covidConfirmation
 			)
 		);
 
@@ -86,13 +86,13 @@ function MedicalHistoryCreate({ history }) {
 
 		setNic("3007");
 		setPname("A.K.Perera");
-		setPreviousDentalhistory("Last Cleaning: 2022-02-04");
-		setDentalConcerns("toothache");
+		setpreviousMedicalhistory("Last Therapy Session: 2022-02-04");
+		// setDentalConcerns("toothache");
 		setCurrentMedications("Vicodin (hydrocodone/acetaminophen)");
 		setOtherDiseases("grass and tree pollen – an allergy to these is known as hay fever (allergic rhinitis)");
-		setCovidDiagnose("no");
-		setFluSymptoms("no");
-		setCovidConfirmation("no");
+		// setCovidDiagnose("no");
+		// setFluSymptoms("no");
+		// setCovidConfirmation("no");
 	};
 
 	if (adminInfo) {
@@ -167,20 +167,20 @@ function MedicalHistoryCreate({ history }) {
 										required
 									/>
 								</Form.Group>
-								<Form.Group controlId="previousDentalhistory">
+								<Form.Group controlId="previousMedicalhistory">
 									<Form.Label>
-										<b>Previous Dental History</b>
+										<b>Previous Medical History</b>
 									</Form.Label>
 									<Form.Control
 										as="textarea"
-										value={previousDentalhistory}
-										placeholder="Enter the previous dental history"
+										value={previousMedicalhistory}
+										placeholder="Enter the previous Medical history"
 										rows={4}
-										onChange={(e) => setPreviousDentalhistory(e.target.value)}
+										onChange={(e) => setpreviousMedicalhistory(e.target.value)}
 										required
 									/>
 								</Form.Group>
-								<h6>
+								{/* <h6>
 									<b>Dental Concerns</b>
 								</h6>
 								<Form.Group controlId="dentalConcerns">
@@ -193,7 +193,7 @@ function MedicalHistoryCreate({ history }) {
 										onChange={(e) => setDentalConcerns(e.target.value)}
 										required
 									/>
-								</Form.Group>
+								</Form.Group> */}
 								<h6>
 									<b>Medical Concerns</b>
 								</h6>
@@ -235,7 +235,7 @@ function MedicalHistoryCreate({ history }) {
 										required
 									/>
 								</Form.Group>
-								<h6>
+								{/* <h6>
 									<b>* Due to COVID-19 pandemic , We ask you to fill out questions in below *</b>
 								</h6>
 								<Form.Group controlId="vaccinations">
@@ -251,8 +251,8 @@ function MedicalHistoryCreate({ history }) {
 										<option value="2 Vaccinations">2 Vaccinations</option>
 										<option value="3 Vaccinations">3 Vaccinations</option>
 									</select>
-								</Form.Group>
-								<Form.Group controlId="covidDiagnose">
+								</Form.Group> */}
+								{/* <Form.Group controlId="covidDiagnose">
 									<Form.Label>
 										Have you previously been diagnosed with COVID-19 or do you think you have had/have COVID-19?
 									</Form.Label>
@@ -263,8 +263,8 @@ function MedicalHistoryCreate({ history }) {
 										onChange={(e) => setCovidDiagnose(e.target.value)}
 										required
 									/>
-								</Form.Group>
-								<Form.Group controlId="fluSymptoms">
+								</Form.Group> */}
+								{/* <Form.Group controlId="fluSymptoms">
 									<Form.Label>Do you have a fever or a cough or any other flu symptoms?</Form.Label>
 									<Form.Control
 										type="fluSymptoms"
@@ -273,8 +273,8 @@ function MedicalHistoryCreate({ history }) {
 										onChange={(e) => setFluSymptoms(e.target.value)}
 										required
 									/>
-								</Form.Group>
-								<Form.Group controlId="covidConfirmation">
+								</Form.Group> */}
+								{/* <Form.Group controlId="covidConfirmation">
 									<Form.Label>Have you been in contact with any person with confirmed COVID-19? </Form.Label>
 									<Form.Control
 										type="covidConfirmation"
@@ -283,7 +283,7 @@ function MedicalHistoryCreate({ history }) {
 										onChange={(e) => setCovidConfirmation(e.target.value)}
 										required
 									/>
-								</Form.Group>
+								</Form.Group> */}
 								<hr />
 								<br />
 								{loading && <Loading size={50} />}

@@ -30,6 +30,7 @@ const getMedicalHistoryCount = asyncHandler(async (req, res) => {
 		} else if (medicalHistory[i].medicalConcerns === "Heart disease") {
 			b = b + 1;
 		} else if (medicalHistory[i].medicalConcerns === "Diabetes") {
+
 			c = c + 1;
 		}
 		i++;
@@ -54,29 +55,27 @@ const createMedicalHistory = asyncHandler(async (req, res) => {
 	const {
 		nic,
 		pname,
-		previousDentalhistory,
-		dentalConcerns,
+		previousMedicalhistory,
 		medicalConcerns,
 		currentMedications,
 		otherDiseases,
-		vaccinations,
-		covidDiagnose,
-		fluSymptoms,
-		covidConfirmation,
+		// vaccinations,
+		// covidDiagnose,
+		// fluSymptoms,
+		// covidConfirmation,
 	} = req.body;
 
 	if (
 		!nic ||
 		!pname ||
-		!previousDentalhistory ||
-		!dentalConcerns ||
+		!previousMedicalhistory ||
 		!medicalConcerns ||
 		!currentMedications ||
-		!otherDiseases ||
-		!vaccinations ||
-		!covidDiagnose ||
-		!fluSymptoms ||
-		!covidConfirmation
+		!otherDiseases 
+		// !vaccinations ||
+		// !covidDiagnose ||
+		// !fluSymptoms ||
+		// !covidConfirmation
 	) {
 		res.status(400);
 		throw new Error("Please fill all the fields");
@@ -84,15 +83,14 @@ const createMedicalHistory = asyncHandler(async (req, res) => {
 		const medicalhistory = new MedicalHistory({
 			nic,
 			pname,
-			previousDentalhistory,
-			dentalConcerns,
+			previousMedicalhistory,
 			medicalConcerns,
 			currentMedications,
 			otherDiseases,
-			vaccinations,
-			covidDiagnose,
-			fluSymptoms,
-			covidConfirmation,
+			// vaccinations,
+			// covidDiagnose,
+			// fluSymptoms,
+			// covidConfirmation,
 		});
 
 		const createMedicalHistory = await medicalhistory.save();
@@ -115,15 +113,14 @@ const UpdateMedicalHistory = asyncHandler(async (req, res) => {
 	const {
 		nic,
 		pname,
-		previousDentalhistory,
-		dentalConcerns,
+		previousMedicalhistory,
 		medicalConcerns,
 		currentMedications,
 		otherDiseases,
-		vaccinations,
-		covidDiagnose,
-		fluSymptoms,
-		covidConfirmation,
+		// vaccinations,
+		// covidDiagnose,
+		// fluSymptoms,
+		// covidConfirmation,
 	} = req.body;
 
 	const medicalhistory = await MedicalHistory.findById(req.params.id);
@@ -131,15 +128,14 @@ const UpdateMedicalHistory = asyncHandler(async (req, res) => {
 	if (medicalhistory) {
 		medicalhistory.nic = nic;
 		medicalhistory.pname = pname;
-		medicalhistory.previousDentalhistory = previousDentalhistory;
-		medicalhistory.dentalConcerns = dentalConcerns;
+		medicalhistory.previousMedicalhistory = previousMedicalhistory;
 		medicalhistory.medicalConcerns = medicalConcerns;
 		medicalhistory.currentMedications = currentMedications;
 		medicalhistory.otherDiseases = otherDiseases;
-		medicalhistory.vaccinations = vaccinations;
-		medicalhistory.covidDiagnose = covidDiagnose;
-		medicalhistory.fluSymptoms = fluSymptoms;
-		medicalhistory.covidConfirmation = covidConfirmation;
+		// medicalhistory.vaccinations = vaccinations;
+		// medicalhistory.covidDiagnose = covidDiagnose;
+		// medicalhistory.fluSymptoms = fluSymptoms;
+		// medicalhistory.covidConfirmation = covidConfirmation;
 
 		const updateMedicalHistory = await medicalhistory.save();
 		res.json(updateMedicalHistory);
