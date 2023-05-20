@@ -45,7 +45,7 @@ function Footer() {
 					<div className="col">
 						<h4>CONTACT</h4>
 						<ul className="list-unstyled">
-							<li>ADDRESS : No,18,Kaduwela Rd,Malabe</li>
+							<li>ADDRESS : No.18,Kaduwela Rd,Malabe</li>
 							<li>PHONE : 077-3872701</li>
 							<li>EMAIL : ColourMeHappy@gmail.com</li>
 						</ul>

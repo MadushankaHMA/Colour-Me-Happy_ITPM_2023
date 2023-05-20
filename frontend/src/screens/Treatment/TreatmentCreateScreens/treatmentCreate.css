@@ -1,15 +1,9 @@
 .basicCreate {
-	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../../Images/basic-treatment-create.jpg");
-	background-position: center;
-	background-size: cover;
+	background-color: rgb(208, 240, 240);
 }
 .orthodonticCreate {
-	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../../Images/orthodontic-create.jpg");
-	background-position: center;
-	background-size: cover;
+	background-color: rgb(208, 240, 240);
 }
 .fillingCreate {
-	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url("../../../Images/filling-create.jpg");
-	background-position: center;
-	background-size: cover;
+	background-color: rgb(208, 240, 240);
 }

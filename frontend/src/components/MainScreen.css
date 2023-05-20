@@ -9,11 +9,11 @@
 	width: 100%;
 }
 .heading {
-	font-size: 42px;
+	font-size: 35px;
 	font-family: "Work Sans", sans-serif;
 	padding: 5px 0px;
 	font-weight: bold;
-	font-style: oblique;
+	/* font-style: oblique; */
 }
 
 @media only screen and (min-width: 1200px) {

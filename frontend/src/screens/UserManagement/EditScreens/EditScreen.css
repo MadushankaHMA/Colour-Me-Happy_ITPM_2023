@@ -13,9 +13,7 @@
 	}
 }
 .editBg {
-	background: url("../../../Images/editView.jpg");
-	background-position: center;
-	background-size: cover;
+	background-color: rgb(208, 240, 240);
 }
 .denied {
 	background: url("../../../Images/accessDenied.jpg");

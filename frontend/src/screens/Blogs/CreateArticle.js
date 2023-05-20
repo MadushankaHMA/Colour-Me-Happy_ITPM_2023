@@ -11,7 +11,7 @@ function CreateBlog({ history }) {
 	const [title, setTitle] = useState("");
 	const [description, setDescription] = useState("");
 	const [image, setImage] = useState(
-		"https://firebasestorage.googleapis.com/v0/b/colour-me-happy-55339.appspot.com/o/tim-mossholder-8R-mXppeakM-unsplash.jpg?alt=media&token=4adc829b-caef-4b8a-a4c9-40bb48b35a9b"
+		"https://firebasestorage.googleapis.com/v0/b/colour-me-happy-55339.appspot.com/o/Mental-Health_BG.jpg?alt=media&token=770d2615-8592-4ad4-98ed-fe2786dfb4d7"
 	);
 
 	const dispatch = useDispatch();

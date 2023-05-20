@@ -13,9 +13,7 @@
 	}
 }
 .profileViewBg {
-	background: url("../../../Images/profileView.jpg");
-	background-position: center;
-	background-size: cover;
+	background-color: rgb(208, 240, 240);
 }
 .profileCont {
 	background: rgba(231, 238, 238, 0.5);
