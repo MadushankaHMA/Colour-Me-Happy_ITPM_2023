@@ -29,7 +29,7 @@ Create a pull request, describing the changes you have made and their purpose.
 Please note that all contributions will be subject to review before they are merged into the main repository.
 
 ### Support
-If you encounter any issues or have any questions regarding the Color Me Happy Psychiatric Clinic Web Application, please feel free to reach out to our support team at support@color-mehappy.com.
+If you encounter any issues or have any questions regarding the Color Me Happy Psychiatric Clinic Web Application, please feel free to reach out to our support team at crewx.y3s2@gmail.com.
 
 ### License
 The Color Me Happy Psychiatric Clinic Web Application is licensed under the MIT License. Please refer to the LICENSE file for more details.
