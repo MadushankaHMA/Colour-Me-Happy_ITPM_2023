@@ -82,7 +82,7 @@ const DoctorArticles = ({ search }) => {
 							width: "500px",
 						}}
 					>
-						Family Dental Clinic Blog
+						Colour Me Happy Blogs
 					</h1>
 					<br></br>
 					<Link to="doctor">

@@ -50,24 +50,24 @@ const registerAdmin = asyncHandler(async (req, res) => {
 
 const authAdmin = asyncHandler(async (req, res) => {
 	const { nic, password } = req.body;
-
+	console.log("nic", nic);
 	const admin = await Admin.findOne({ nic });
 	// if (admin && (await admin.matchPassword(password))) {
-		res.json({
-			_id: admin._id,
-			name: admin.name,
-			isAdmin: admin.isAdmin,
-			dob: admin.dob,
-			nic: admin.nic,
-			telephone: admin.telephone,
-			address: admin.address,
-			email: admin.email,
-			previousRef: admin.previousRef,
-			pic: admin.pic,
-			dataEntry: admin.dataEntry,
-			token: generateToken(admin._id),
-			password:admin.password
-		});
+	res.json({
+		_id: admin._id,
+		name: admin.name,
+		isAdmin: admin.isAdmin,
+		dob: admin.dob,
+		nic: admin.nic,
+		telephone: admin.telephone,
+		address: admin.address,
+		email: admin.email,
+		previousRef: admin.previousRef,
+		pic: admin.pic,
+		dataEntry: admin.dataEntry,
+		token: generateToken(admin._id),
+		password: admin.password,
+	});
 	// } else {
 	// 	res.status(400);
 	// 	throw new Error("Invalid NIC or Password!");
@@ -114,7 +114,7 @@ const updateAdminProfile = asyncHandler(async (req, res) => {
 });
 const getAdminProfile = asyncHandler(async (req, res) => {
 	const admin = await Admin.findById(req.admin._id);
-		console.log("admin",admin)
+	console.log("admin", admin);
 	if (admin) {
 		res.json({
 			name: admin.name,

@@ -1,7 +1,3 @@
 .patientReportBg {
-	background: url("../../../Images/patient-report.png");
-	background-position: center;
-	background-size: cover;
-}
-.patientBar {
+	background-color: rgb(202, 247, 249);
 }
